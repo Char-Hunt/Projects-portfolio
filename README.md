@@ -116,7 +116,7 @@ How many employees are not in the Information Technology department?
 
 ## Summary
 
-When assessing a security event, it is extremely important to discern whether an incident is serious or a false positive. Gathering the necessary evidence is critical and understanding how to retrieve data efficiently will determine how an analyst will move forward with the incident.
+When assessing a security event, it is extremely important to determine whether an incident is serious or a false positive. Gathering the necessary evidence is critical and understanding how to retrieve data efficiently will determine how an analyst will move forward with the incident.
 
 In this project, we essentially used SQL as a tool for data gathering our specific needs. Our goal was to obtain specific information about employees, their machines, and the departments they belong to from the database. We used SQL to do the following to:
 
