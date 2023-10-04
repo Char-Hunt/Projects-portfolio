@@ -14,7 +14,7 @@ The security team needs data to audit potential security incidents and to update
 
   >_Note: This project works with the organization database and the tables it contains in the MariaDB shell._
 
-## Retrieve after hours failed login attempts
+## Task 1. Retrieve after hours failed login attempts
 
 Your team is investigating failed login attempts that were made after business hours. You want to retrieve this information from the login activity. You’ll identify all unsuccessful attempts after 18:00.
 
@@ -26,14 +26,14 @@ The login_time column in the log_in_attempts table contains information on when 
 
 This query is essentially selecting all columns from the log_in_attempts table where the login_time is greater than 18:00 and was unsuccessful. We've already established that normal operating hours were before that time. Gathering the evidence helps an analyst put the pieces together when assessing an incident. For instance, we now have a list of IP addresses, countries, and usernames that were used in these attempts. The goal is to discern whether these attempts were legit or not.
 
-How many failed login attempts occurred after 18:00?
+## How many failed login attempts occurred after 18:00?
 
   -  20
   -  44
   - [x] 19
   -  39
 
-## Retrieve login attempts on specific dates
+## Task 2. Retrieve login attempts on specific dates
 
 A suspicious event occurred on 2022-05-09. To investigate this event, we want to review all login attempts which occurred on this day and the day before. This query must use the appropriate filters in SQL that will identify all login attempts that occurred on 2022-05-09 or 2022-05-08. (The date of the login attempt is found in the login_date column.)
 
@@ -48,7 +48,7 @@ How many login attempts were made on these two days?
   - 89
   - 67
 
-## Retrieve login attempts outside of Mexico
+## Task 3. Retrieve login attempts outside of Mexico
 
 There’s been suspicious activity with login attempts, but our team has determined that this activity didn't originate in Mexico. We need to investigate login attempts that occurred outside of Mexico. In this instance, we can use filters in SQL to create a query that identifies all login attempts that occurred outside of Mexico specifically.
 
@@ -58,14 +58,14 @@ The following SQL query retrieves login attempts by using the NOT and LIKE keywo
 
 ![7184ryg778h780-4848](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/74318cfd-5a6d-4989-8917-a0c170be3585)
 
-How many login attempts were made outside of Mexico?
+Task 3. How many login attempts were made outside of Mexico?
 
   - 194
   - [x] 144
   - 73
   - 122
 
-## Retrieve employees in Marketing
+## Task 4. Retrieve employees in Marketing
 
 As a security analyst, we are often employed to conduct security updates on endpoints and devices . In this case, the security team must identify specific employee machines in the Marketing department. Our queries in this scenario requires that we identify all employees of the Marketing department for all offices in the East building.
 
@@ -84,7 +84,7 @@ What is the username of the first employee in the Marketing department in the Ea
   - jclark
   - fbautist
 
-## Retrieve employees in Finance or Sales
+## Task 5. Retrieve employees in Finance or Sales
 
 Now, our team needs to perform a different update to the computers of all employees in the Finance or the Sales department. Similarly, we'll locate and filter information on these employees as the previous result.
 
@@ -101,7 +101,7 @@ What is the username of the first employee in the Sales department returned by t
   - sgilmore
   - tbarnes
 
-## Retrieve all employees not in IT
+## Task 6. Retrieve all employees not in IT
 
 Our team needs to make one more update. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department. We'll use the NOT operator to identify these employees as shown below.
 
