@@ -1,7 +1,7 @@
-## Project Portfolio - Auditing security incidents with SQL
+## Project Portfolio - Auditing security incidents using SQL
 ## Project description
 
-In this project, the goal is to obtain specific information about employees, their machines, and the departments they belong to from the database. As a security analyst, you’ll likely need to analyze data. And often finding the specific data you’ll need depends on more than one factor. We will use SQL to retrieve specific pieces of information from the database and filter for multiple conditions. In addition, we will use the AND, OR and NOT operators to create more filters for SQL queries.
+In this project, the goal is to obtain specific information about employees, their machines, and the departments they belong to from the database. As a security analyst, you’ll likely need to analyze data. Finding the specific data you’ll need often depends on more than one factor. We will use SQL to retrieve specific pieces of information from the database and filter for multiple conditions. In addition, we will use the AND, OR and NOT operators to create more filters for SQL queries.
 
 The security team needs data to audit potential security incidents and to update computers. As an analyst, we are responsible for filtering the following required information from the database:
 
@@ -22,7 +22,8 @@ The login_time column in the log_in_attempts table contains information on when 
 
    >_NOTE: The success column in the log_in_attempts table contains values of TRUE or FALSE to indicate whether the login was successful. MySQL stores Boolean values as 1 for TRUE, and 0 for FALSE. This means that TRUE is represented as 1, and FALSE represented as 0 in the success column._
 
-xxx
+![7184y9843yt084htp21](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/832860c7-10bb-453f-940b-eac433fbe009)
+
 This query is essentially selecting all columns from the log_in_attempts table where the login_time is greater than 18:00 and was unsuccessful. We've already established that normal operating hours were before that time. Gathering the evidence helps an analyst put the pieces together when assessing an incident. For instance, we now have a list of IP addresses, countries, and usernames that were used in these attempts. The goal is to discern whether these attempts were legit or not.
 
 How many failed login attempts occurred after 18:00?
@@ -38,7 +39,8 @@ A suspicious event occurred on 2022-05-09. To investigate this event, we want to
 
 As noted in the screenshot below, we used the OR operator to retrieve the failed login attempts on the specified days. Our query identified multiple attempts on both days, successful and unsuccessful. We can dig a bit deeper if necessary and filter from more parameters.
 
-xxx
+![7184f8rihpih3rgr4484](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/07acdd11-7d61-4f8c-800a-5f37ea99641a)
+
 How many login attempts were made on these two days?
 
   - 44
@@ -54,7 +56,8 @@ Additionally, we must make sure that the query makes an accommodation for the co
 
 The following SQL query retrieves login attempts by using the NOT and LIKE keywords. Also, the matching pattern -- MEX% -- includes the wildcard % to represent a string of any length. This wildcard may be placed both before and after the targeted substring.
 
-xxx
+![7184ryg778h780-4848](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/74318cfd-5a6d-4989-8917-a0c170be3585)
+
 How many login attempts were made outside of Mexico?
 
   - 194
@@ -72,7 +75,8 @@ Our goal is to update specific employee machines. We'll need to obtain the infor
 
 Please see the following results below from the SQL query to view the filtered columns and values in the employees table:
 
-xxx
+![7184f8rihpe57ubvfgr6](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/abf90b1e-af85-4fc7-b784-bfc6dd843636)
+
 What is the username of the first employee in the Marketing department in the East building?
 
   - [x] elarson
@@ -88,7 +92,8 @@ The WHERE and OR keywords are implemented within this query below:
 
    >_Note: Even though both conditions are based on the same column, you need to write out both full conditions. This means that you must specify department as the column in both conditions._
 
-xxx
+![7174b456fy4175894d0](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/11b81d80-c6ed-4792-8094-ea6fe8441ae8)
+
 What is the username of the first employee in the Sales department returned by the query?
 
   - bisles
@@ -100,7 +105,8 @@ What is the username of the first employee in the Sales department returned by t
 
 Our team needs to make one more update. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department. We'll use the NOT operator to identify these employees as shown below.
 
-xxx
+![71844d4y798ugef037](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/6ad56a57-8137-4def-9323-c8aaf5733c56)
+
 How many employees are not in the Information Technology department?
 
   - 188
