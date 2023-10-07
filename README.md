@@ -22,7 +22,8 @@ The login_time column in the log_in_attempts table contains information on when 
 
    >_NOTE: The success column in the log_in_attempts table contains values of TRUE or FALSE to indicate whether the login was successful. MySQL stores Boolean values as 1 for TRUE, and 0 for FALSE. This means that TRUE is represented as 1, and FALSE represented as 0 in the success column._
 
-xxx
+![7184547657952932569](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/dd0b1aeb-4c17-4909-bf9c-d020bc4c0a66)
+
 
 This query is essentially selecting all columns from the log_in_attempts table where the login_time is greater than 18:00 and was unsuccessful. We've already established that normal operating hours were before that time. Gathering the evidence helps an analyst put the pieces together when assessing an incident. For instance, we now have a list of IP addresses, countries, and usernames that were used in these attempts. The goal is to discern whether these attempts were legit or not.
 
