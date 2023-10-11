@@ -52,11 +52,9 @@ How many login attempts were made on these two days?
 
 ## Task 3. Retrieve login attempts outside of Mexico
 
-So, now we've got some suspicious login activity on our hands, but you've ruled out Mexico as the source. Now, the mission is to dig into login attempts that took place outside of the Mexican borders, we need to use SQL filters and tools for the task.
+So, now we've got some suspicious login activity on our hands, but you've ruled out Mexico as the source. Next, the goal is to dig into login attempts that took place outside of the Mexican borders; To do this we need to use SQL filters and tools for the task.
 
-Here's the SQL query that'll help you spot these elusive login attempts. But before we dive into it, remember that the 'country' column contains both 'MEX' and 'MEXICO' to represent Mexico. In this instance, we can use filters in SQL to create a query that identifies all login attempts that occurred outside of Mexico specifically.
-
-Additionally, we must make sure that the query makes an accommodation for the country column. (When referring to Mexico, the country column contains values of both MEX and MEXICO).
+Here's the SQL query that'll help you spot these elusive login attempts. But before we dive into it, remember that the 'country' column contains both 'MEX' and 'MEXICO' to represent Mexico. In this instance, we can use filters in SQL to create a query that identifies all login attempts that occurred specfically outside of Mexico
 
 >_NOTE: The following SQL query retrieves login attempts by using the NOT and LIKE keywords. Also, the matching pattern -- MEX% -- includes the wildcard % to represent a string of any length. This wildcard may be placed both before and after the targeted substring._
 
@@ -71,13 +69,14 @@ Task 3. How many login attempts were made outside of Mexico?
 
 ## Task 4. Retrieve employees in Marketing
 
-As a security analyst, we are often employed to conduct security updates on endpoints and devices . In this case, the security team must identify specific employee machines in the Marketing department. Our queries in this scenario requires that we identify all employees of the Marketing department for all offices in the East building.
+As a security analyst, we are often called to conduct security updates on endpoints and devices . In this case, the security team must identify specific employee machines in the Marketing department. Our queries in this scenario requires that we identify all employees of the Marketing department for all offices in the East building.
 
-  The department of the employee is found in the department column, which contains values that include Marketing. The office is found in the office column. Some examples of values in this column are East-170, East-320, and North-434. We essentially need to use the LIKE keyword with % to filter for the East building.
+Here's the scoop: You will need to uncover all the Marketing department employees nestled in offices within the East building. This involves a little SQL finesse and some clever filtering using the LIKE keyword with '%' to zero in on that East building.
 
-Our goal is to update specific employee machines. We'll need to obtain the information about employees in the 'Marketing' department who are located in all offices in the East building (such as 'East-170' or 'East-320'). Keywords WHERE and the modifier LIKE will enable our query to filter out the results properly.
+Now, in the database, employee departments are neatly stashed in the department column, with 'Marketing' being one of the values. Offices, on the other hand, are snug in the office column, sporting labels like 'East-170,' 'East-320,' or 'North-434.' Your goal is to gather intel on these 'Marketing' department heroes who call the East building home, using the WHERE keyword and the trusty LIKE modifier.
 
-Please see the following results below from the SQL query to view the filtered columns and values in the employees table:
+Here's a glimpse of how the SQL query works its charm:
+
 ![7184547657952932569_4](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/a0388c20-3565-4a94-bfc4-287a89296f5a)
 
 What is the username of the first employee in the Marketing department in the East building?
@@ -89,9 +88,9 @@ What is the username of the first employee in the Marketing department in the Ea
 
 ## Task 5. Retrieve employees in Finance or Sales
 
-Now, our team needs to perform a different update to the computers of all employees in the Finance or the Sales department. Similarly, we'll locate and filter information on these employees as the previous result.
+Let's keep going... So, your team's onto another update mission, and this time, it's targeting all the hardworking folks in the Finance and Sales departments. Just like before, you're going to wield your SQL skills to pinpoint and filter out the info on these dedicated employees, following the same trail as the previous result.
 
-The WHERE and OR keywords are implemented within this query below:
+In this operation, we'll be making friends with the WHERE and OR keywords, the dynamic duo of SQL queries, to get the job done. Here's a glimpse of how it's done:
 
    >_Note: Even though both conditions are based on the same column, you need to write out both full conditions. This means that you must specify department as the column in both conditions._
 ![7174b456fy4175894d0_5](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/d7dc4b5c-b994-4617-a36d-ec9ffe0b3d45)
@@ -105,7 +104,8 @@ What is the username of the first employee in the Sales department returned by t
 
 ## Task 6. Retrieve all employees not in IT
 
-Our team needs to make one more update. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department. We'll use the NOT operator to identify these employees as shown below.
+and it's already been rolled out to the computers over in the Information Technology department. Now, the next step involves getting the lowdown on employees who reside outside the IT realm. To accomplish this, you're going to use the NOT operator, a convenient tool in SQL that we can use to get it done. Here's a sneak peek at how you'll do it:
+
 ![71844d4y798ugef037_6](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/9f2aeaf5-323d-4273-bed5-fdc0baa67b60)
 
 How many employees are not in the Information Technology department?
@@ -117,9 +117,9 @@ How many employees are not in the Information Technology department?
 
 ## Summary
 
-When assessing a security event, it is extremely important to determine whether an incident is a serious event that requires action, or a false positive. Gathering the necessary evidence is critical and understanding how to retrieve data efficiently will determine how an analyst will move forward with the incident.
+In the realm of security assessment, one of the key aspects is distinguishing between a genuine security incident that demands immediate action and a false alarm, often referred to as a false positive. The critical step in this process is amassing the required evidence. A profound understanding of efficient data retrieval methods is pivotal, as it significantly influences the subsequent actions taken by an analyst.
 
-In this project, we essentially used SQL as a tool for data gathering and to suit our specific needs. Our goal was to obtain specific information about employees, their machines, and the departments they belong to from the database. We used SQL to do the following:
+Now, in the context of our project, SQL emerged as a valuable tool for data collection tailored to our precise requirements. Our primary objective revolved around obtaining specific insights related to employees, their corresponding devices, and the departments they are associated with, all gleaned from a structured database. To achieve this, we harnessed SQL's capabilities to execute the following tasks:
 
   - Run queries to retrieve information from a database and
   - Apply <code>AND</code>, <code>OR</code>, and <code>NOT</code> operators to filter SQL queries.
