@@ -106,7 +106,7 @@ What is the username of the first employee in the Sales department returned by t
 
 ## Task 6. Retrieve all employees not in IT
 
-and it's already been rolled out to the computers over in the Information Technology department. Now, the next step involves getting the lowdown on employees who reside outside the IT realm. To accomplish this, you're going to use the NOT operator, a convenient tool in SQL that we can use to get it done. Here's a sneak peek at how you'll do it:
+So, your team is gearing up for one more update, and it's already been rolled out to the computers over in the Information Technology department. Now, the next step involves getting the lowdown on employees who reside outside the IT realm. To accomplish this, you're going to use the NOT operator, a convenient tool in SQL that we can use to get it done. Here's a sneak peek at how you'll do it:
 
 ![71844d4y798ugef037_6](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/9f2aeaf5-323d-4273-bed5-fdc0baa67b60)
 
