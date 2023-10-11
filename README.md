@@ -1,7 +1,7 @@
 ## Project Portfolio - Auditing security incidents using SQL
 ## Project description
 
-In this project, the goal is to obtain specific information about employees, their machines, and the departments they belong to from the database. As a security analyst, you’ll likely need to analyze data. Finding the specific data you’ll need often depends on more several factors. We will use SQL to retrieve specific pieces of information from the database and filter for multiple conditions. In addition, we will use the AND, OR and NOT operators to create more filters for SQL queries.
+In this project, the goal is to obtain specific information about employees, their machines, and the departments they belong to from the database. As a security analyst, you’ll likely need to analyze data. Finding the specific data you’ll need often depends on more several factors. We will use SQL to retrieve specific pieces of information from the database and filter for multiple conditions. In addition, we will use the <code>AND</code>, <code>OR</code> and <code>NOT</code> operators to create more filters for SQL queries.
 
 The security team needs data to audit potential security incidents and also update computers. As an analyst, we are responsible for filtering the following required information from the database:
 
@@ -24,7 +24,9 @@ The login_time column in the log_in_attempts table contains information revealin
 
 ![7184y9843yt084htp21_1](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/7db91d7c-eb05-4b45-8b82-025fbabaceb5)
 
-This query tells the database, "Show me all those login attempts that dared to misbehave after 6:00 PM." It's a savvy way to pinpoint those after-hours culprits in the login activity data. If you need to dig even deeper or get more specific, we can user SQL to dig deeper! We've already established that normal operating hours were before that time. Gathering the evidence helps an analyst put the pieces together when assessing an incident. For instance, we now have a list of IP addresses, countries, and usernames that were used in these attempts. The goal is to discern whether these attempts were legitmate or not.
+This query tells the database, "Show me all those login attempts that dared to misbehave after 6:00 PM." It's a savvy way to pinpoint those after-hours culprits in the login activity data. If you need to dig even deeper or get more specific, we can user SQL to dig deeper! We've already established that normal operating hours were before that time. 
+
+Gathering the evidence helps an analyst put the pieces together when assessing an incident. For instance, we now have a list of IP addresses, countries, and usernames that were used in these attempts. The goal is to discern whether these attempts were legitmate or not.
 
 ## How many failed login attempts occurred after 18:00?
 
@@ -56,7 +58,7 @@ So, now we've got some suspicious login activity on our hands, but you've ruled 
 
 Here's the SQL query that'll help you spot these elusive login attempts. But before we dive into it, remember that the 'country' column contains both 'MEX' and 'MEXICO' to represent Mexico. In this instance, we can use filters in SQL to create a query that identifies all login attempts that occurred specfically outside of Mexico
 
->_NOTE: The following SQL query retrieves login attempts by using the NOT and LIKE keywords. Also, the matching pattern -- MEX% -- includes the wildcard % to represent a string of any length. This wildcard may be placed both before and after the targeted substring._
+>_NOTE: The following SQL query retrieves login attempts by using the <code>NOT</code> and <code>LIKE</code> keywords. Also, the matching pattern -- MEX% -- includes the wildcard <code>%</code> to represent a string of any length. This wildcard may be placed both before and after the targeted substring._
 
 ![7184ryg778h780-4848_3](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/58cd7695-7b2c-4b6e-80f0-24a890567544)
 
