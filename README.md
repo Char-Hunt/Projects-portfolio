@@ -1,9 +1,9 @@
 ## Project Portfolio - Auditing security incidents using SQL
 ## Project description
 
-In this project, the goal is to obtain specific information about employees, their machines, and the departments they belong to from the database. As a security analyst, you’ll likely need to analyze data. Finding the specific data you’ll need often depends on more several factors. We will use SQL to retrieve specific pieces of information from the database and filter for multiple conditions. In addition, we will use the <code>AND</code>, <code>OR</code> and <code>NOT</code> operators to create more filters for SQL queries.
+In this project, the goal is to obtain specific information about employees, their machines, and the departments they belong to from the database. As a security analyst, you’ll likely need to analyze data. Finding the specific data you’ll need often depends on several factors. We will use SQL to retrieve specific pieces of information from the database and filter for multiple conditions. In addition, we will use the <code>AND</code>, <code>OR</code> and <code>NOT</code> operators to create more filters for SQL queries.
 
-The security team needs data to audit potential security incidents and also update computers. As an analyst, we are responsible for filtering the following required information from the database:
+The security team needs data to audit potential security incidents and also update computers. As an analyst, you are responsible for filtering the following required information from the database:
 
 1. Retrieve failed login attempts taking place oustide business hours. 
 2. Obtain login attempts on specific dates.
@@ -16,7 +16,7 @@ The security team needs data to audit potential security incidents and also upda
 
 ## Task 1. Retrieve after hours failed login attempts
 
-Your team's on a mission to uncover those failed login attempts that decided to act up after business hours. To get the scoop, you're going to dive into the login activity data, specifically targeting unsuccessful attempts after the clock strikes 6:00 PM.
+Your team's on a mission to uncover those failed login attempts that decided to act up after business hours. To get the scoop, you're going to delve into the login activity data, specifically targeting unsuccessful attempts after the clock strikes 6:00 PM.
 
 The login_time column in the log_in_attempts table contains information revealing when these login attempts took place. Just remember, '18:00' marks the end of regular office hours. So, your SQL query would look something like this:
 
@@ -24,9 +24,9 @@ The login_time column in the log_in_attempts table contains information revealin
 
 ![7184y9843yt084htp21_1](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/7db91d7c-eb05-4b45-8b82-025fbabaceb5)
 
-This query tells the database, "Show me all those login attempts that dared to misbehave after 6:00 PM." It's a savvy way to pinpoint those after-hours culprits in the login activity data. If you need to dig even deeper or get more specific, we can user SQL to dig deeper! We've already established that normal operating hours were before that time. 
+This query tells the database, "Show me all those login attempts that dared to misbehave after 6:00 PM." It's a savvy way to pinpoint those after-hours culprits in the login activity data. If you need to dig even deeper or get more specific, you can use SQL to do so! We've already established that normal operating hours were before that time. 
 
-Gathering the evidence helps an analyst put the pieces together when assessing an incident. For instance, we now have a list of IP addresses, countries, and usernames that were used in these attempts. The goal is to discern whether these attempts were legitmate or not.
+Gathering the evidence helps an analyst put the pieces together when assessing an incident. For instance, we now have a list of IP addresses, countries, and usernames that were used in these attempts. The goal is to discern whether or not these attempts were legitmate.
 
 ## How many failed login attempts occurred after 18:00?
 
@@ -39,9 +39,9 @@ Gathering the evidence helps an analyst put the pieces together when assessing a
 
 So, we've got this mysterious event on May 9, 2022, and we're all set to get to the bottom of it. To do that, you want to pull up all the login attempts from not just that day but also the one before it. The secret sauce here is a nice SQL query with the right filters.
 
-Here's what that SQL query looks like, as you've noted in your screenshot (The date of the login attempt is found in the login_date column):
+Here's what that SQL query looks like (the date of the login attempt is found in the login_date column):
 
-As noted below, we used the OR operator to retrieve the failed login attempts on the specified days. Our query identified multiple attempts on both days, successful and unsuccessful. We can still dig a bit deeper, if necessary, and filter from more parameters.
+As noted below, I used the <code>OR</code> operator to retrieve the failed login attempts on the specified days. Our query identified multiple attempts on both days, successful and unsuccessful. If necessary, and filter from more parameters--we can still dig a bit deeper.
 
 ![7184f8rihpih3rgr4484_2](https://github.com/Char-Hunt/Projects-portfolio/assets/138831832/e81d84ca-23e7-40cd-9bc5-4b01d5668ff9)
 
