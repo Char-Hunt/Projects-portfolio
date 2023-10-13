@@ -75,7 +75,7 @@ As a security analyst, we are often called upon to conduct security updates on e
 
 Here's the scoop: You will need to uncover all the Marketing department employees nestled in offices within the East building. This involves a little SQL finesse and some clever filtering using the LIKE keyword with '%' to zero in on that East building.
 
-Now, in the database, employee departments are neatly stashed in the department column, with 'Marketing' being one of the values. Offices, on the other hand, are snug in the office column, sporting labels like 'East-170,' 'East-320,' or 'North-434.' Your goal is to gather intel on these 'Marketing' department heroes who call the East building home, using the WHERE keyword and the handy LIKE modifier.
+Now, in the database, employee departments are neatly stashed in the department column, with 'Marketing' being one of the values. Offices, on the other hand, are sitting snug in the office column, sporting labels like 'East-170,' 'East-320,' or 'North-434.' Your goal is to gather intel on these 'Marketing' department heroes who call the East building home, using the WHERE keyword and our handy LIKE modifier.
 
 Here's a glimpse of how the SQL query works its charm:
 
@@ -119,9 +119,9 @@ How many employees are not in the Information Technology department?
 
 ## Summary
 
-In the realm of security assessment, one of the key aspects is distinguishing between a genuine security incident that demands immediate action and a false alarm, often referred to as a false positive. The critical step in this process is amassing the required evidence. A profound understanding of efficient data retrieval methods is pivotal, as it significantly influences the subsequent actions taken by an analyst.
+In the realm of security assessment, one of the key aspects is distinguishing between a genuine security incident that demands immediate action and a false alarm, often referred to as a false positive. The critical step in this process is gfathering the required evidence. A profound understanding of efficient data retrieval methods is pivotal, as it significantly influences the subsequent actions taken by an analyst.
 
-Now, in the context of our project, SQL emerged as a valuable tool for data collection tailored to our precise requirements. Our primary objective revolved around obtaining specific insights related to employees, their corresponding devices, and the departments they are associated with, all gleaned from a structured database. To achieve this, we harnessed SQL's capabilities to execute the following tasks:
+In the context of our project, SQL emerged as a valuable tool for data collection tailored to our precise requirements. Our primary objective revolved around obtaining specific insights related to employees, their corresponding devices, and the departments they are associated with, all gleaned from a structured database. To achieve this, we harnessed SQL's capabilities to execute the following tasks:
 
   - Run queries to retrieve information from a database and
   - Apply <code>AND</code>, <code>OR</code>, and <code>NOT</code> operators to filter SQL queries.
