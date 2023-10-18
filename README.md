@@ -1,5 +1,5 @@
-## Project Portfolio - Conducing a security audit; Evaluating incidents Using SQL
-## Project description
+## Project Portfolio - Conducting a security audit; Evaluating incidents Using SQL
+## Project Description
 
 In this project, the goal is to obtain specific information about employees, their machines, and the departments they belong to from the database. As a security analyst, you’ll likely need to analyze data. Finding the specific data you’ll need often depends on several factors. We will use SQL to retrieve specific pieces of information from the database and filter for multiple conditions. In addition, we will use the <code>AND</code>, <code>OR</code> and <code>NOT</code> operators to create more filters for SQL queries.
 
